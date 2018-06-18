@@ -121,7 +121,8 @@ def main():
     )
 
     val_loader = torch.utils.data.DataLoader(
-        datasets.ImageFolder(valdir, val_tf),
+        #datasets.ImageFolder(valdir, val_tf),
+        datasets.ImageFolder('content/pretrained/abc-val', val_tf),
         batch_size=args.batch_size, shuffle=False,
         num_workers=args.workers, pin_memory=True)
 
