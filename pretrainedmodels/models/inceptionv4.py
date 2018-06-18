@@ -348,8 +348,8 @@ if __name__ == '__main__':
     print('success')
     assert inceptionv4(num_classes=1000, pretrained='imagenet')
     print('success')
-    assert inceptionv4(num_classes=1000, pretrained='imagenet+background')
-    print('success')
+    #assert inceptionv4(num_classes=1000, pretrained='imagenet+background')
+    #print('success')
 
     # fail
-    assert inceptionv4(num_classes=1000, pretrained='imagenet')
+    #assert inceptionv4(num_classes=1000, pretrained='imagenet')
